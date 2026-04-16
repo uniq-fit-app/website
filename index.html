@@ -1,77 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uniq-Fit | Coming Soon</title>
+  <title>Uniq-Fit</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      flex-direction: column;
-      background-color: #1C2643; /* Uniq-Fit Navy */
-      color: white;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-
-    img.logo {
-      width: 120px; 
-      height: auto;
-      padding: 10px;
-      background-color: transparent;
-    }
-
-    h3 {
-      font-size: 1rem;
-      font-weight: normal;
-      margin-bottom: 20px;
-      margin-top: 0px;
-    }
-
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-    }
-
-    p {
-      font-size: 1rem;
-      max-width: 1000px;
-      line-height: 1.5;
-      margin: 0 auto 20px auto;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 15px;
-      width: 100%;
-      text-align: center;
-      font-size: 0.9rem;
-      color: white;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
 </head>
+
 <body>
+  <header class="navbar">
+    <nav class="nav-container">
+      <div class="nav-left">
+        <a href="index.html">
+          <img src="assets/logo-navy.svg" alt="Uniq-Fit" class="nav-logo" />
+        </a>
+      </div>
 
-  <!-- Logo -->
-  <img src="assets/logo-white-bg.svg" alt="Uniq-Fit Logo" class="logo">
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <!-- App Name -->
-  <h3>Uniq-Fit</h3>
+      <ul class="nav-menu">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Coming Soon -->
-  <h2>Coming Soon!</h2>
+  <main>
+    <section class="hero">
+      <img src="assets/icon.svg" alt="Uniq-Fit Logo" class="icon">
+      <h4>Uniq-Fit</h4>
+      <h1>Gender Affirming Fitness</h1>
 
-  <!-- Blurb -->
-  <p>Uniq-Fit is a fitness app made for trans and non-binary people. Use fitness and nutrition to support your transition goals. Beta testing on Apple iOS kicks off before the end of 2025 — we can’t wait for you to try it!</p>
+      <a href="#features">
+        <div class="scroll-indicator" aria-hidden="true">
+          <span class="chevron"></span>
+        </div>
+      </a>
+    </section>
 
-  <!-- Footer -->
-  <footer>© 2025 Uniq-Apps Inc</footer>
+    <section class="section" id="features">
+      <h2>Features Tailored for You</h2>
+      <div class="card-section card-accordion">
+
+        <div class="card active">
+          <div class="card-image">
+            <div class="bg-img bg-gym">
+              <img src="assets/workout-screen.png" alt="App workout screen">
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-header">
+              <h3><b>Overview</b></h3>
+            </div>
+            <p>
+              Uniq-fit, a unique gym for unique people. A personal gym built for everyone - with the specific needs of the trans community at its heart.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <div class="bg-img bg-gym">
+              <img src="assets/goal-and-profile-screen.png" alt="goal and profile screens">
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-header">
+              <h3><b>Gender-Aligned Profiles</b></h3>
+            </div>
+            <p>
+              Choose from masculinizing or feminizing plans, with three distinct profiles available for each option. Or choose to just stay in shape.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <div class="bg-img bg-gym">
+              <img src="assets/schedule-screen.png" alt="Weekly Screen Schedule">
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-header">
+              <h3><b>Tailored Weekly Plans</b></h3>
+            </div>
+            <p>
+              Pick shorter or longer workouts based on your personal schedule. Work your way up from beginner plans or start at an advanced level.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <div class="bg-img bg-gym">
+              <img src="assets/health-info-screen.png" alt="Health Info Screen">
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-header">
+              <h3><b>Personalized Workouts</b></h3>
+            </div>
+            <p>
+              We account for injuries, training level, and even your current gender- affirming care when putting together your plan.            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <div class="bg-img bg-gym">
+              <img src="assets/progress-tracking-screen.png" alt="Progress Tracking Screen">
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-header">
+              <h3><b>Progress & Body Tracking</b></h3>
+            </div>
+            <p>
+                Track your reps, measurements, and personal progress easily in the app. We’ll make sure to remind you so you don’t forget!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2>The People Behind Uniq-Fit</h2>
+      <div class="card-section card-grid">
+
+        <div class="card active">
+          <div class="card-image">
+            <div class="bg-img bg-gym">
+              <img src="assets/kate-isolated-v2.png" class="about-us-img" alt="Kate Costa">
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-header">
+              <h3><b>Kate Costa</b> (she/they)</h3>
+              <h4>Co-Founder & Product Lead</h4>
+            </div>
+            <p>
+              Kate has worked as a designer and developer for over a decade. While considering her transition, she turned to fitness with Raul’s help to ease gender dysphoria, gaining greater control over her body and self-image. A year later, they co-founded Uniq-Fit to help others build that same confidence through fitness.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <div class="bg-img bg-gym">
+              <img src="assets/raul-isolated-v2.png" class="about-us-img" alt="Raul San Bartolome">
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-header">
+              <h3><b>Raul San Bartolome</b> (he/him)</h3>
+              <h4>Co-Founder & Fitness Lead</h4>
+            </div>
+            <p>
+             Raul has worked as a personal trainer for over ten years. He has trained a diverse set of clients, coached and competed in lower-level basketball, and instructed rock climbing. After seeing the impact fitness had on Kate’s transition, he co-founded Uniq-Fit to provide that same support to others on their journey.        
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>We’d Love to Hear From You</h2>
+      <div class="card-section card-grid">
+
+        <div class="card active">
+          <div class="card-image">
+            <div class="bg-img bg-support">
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-header">
+              <h3><b>Support</b></h3>
+            </div>
+            <p>
+              Do you have questions, issues, or suggestions? We’re happy to help!
+            </p>
+            <p class="cta">
+              <a href="mailto:support@uniq-fit.app">get support</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <div class="bg-img bg-bus-inq">
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-header">
+              <h3><b>Business Inquiries</b></h3>
+            </div>
+            <p>
+              For press, partnerships, or any other business-related inquiries, please reach out. 
+            </p>
+            <p class="cta">
+              <a href="mailto:info@uniq-fit.app">reach out</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <div class="bg-img bg-careers">
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-header">
+              <h3><b>Careers</b></h3>
+            </div>
+            <p>
+              We’re a small team always looking to connect with people who believe in our mission.
+            </p>
+            <p class="cta">
+              <a href="careers.html">join the team</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <!-- Column 1: Logo -->
+      <div class="footer-col footer-logo">
+        <img src="assets/logo-white.svg" alt="Uniq-Fit logo">
+      </div>
+
+      <!-- Column 2: Links -->
+      <div class="footer-col">
+        <a href="mailto:support@uniq-fit.app">Support</a>
+        <a href="careers.html">Careers</a>
+      </div>
+
+      <!-- Column 3: Links -->
+      <div class="footer-col">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Use</a>
+      </div>
+
+      <!-- Column 4: Social -->
+      <div class="footer-col footer-social">
+        <a href="https://www.instagram.com/uniq.fit.app/" aria-label="Instagram">
+          <img src="assets/Instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://bsky.app/profile/uniq-fit.bsky.social" aria-label="Blue Sky">
+          <img src="assets/blue-sky.svg" alt="Blue Sky">
+        </a>
+        <a href="https://www.tiktok.com/@uniqfit1" aria-label="Tik Tok">
+          <img src="assets/tik-tok.svg" alt="Tik Tok">
+        </a>
+        <a href="https://www.linkedin.com/company/uniq-fit-app/" aria-label="LinkedIn">
+          <img src="assets/linkedin.svg" alt="LinkedIn">
+        </a>
+      </div>
+    </div>
+
+    <!-- Row 2: Divider -->
+    <hr class="footer-divider">
+
+    <!-- Row 3: Copyright -->
+    <div class="footer-bottom">
+      © 2026 Uniq-Apps Inc.
+    </div>
+  </footer>
+
+
 
 </body>
+
 </html>
